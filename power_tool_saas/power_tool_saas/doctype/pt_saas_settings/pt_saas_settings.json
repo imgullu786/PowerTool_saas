@@ -1,0 +1,90 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-12 04:12:50.288620",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "aws_s3_configuration_section",
+  "aws_access_key_id",
+  "aws_secret_access_key",
+  "aws_region",
+  "aws_bucket",
+  "connection_section",
+  "connection_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "aws_s3_configuration_section",
+   "fieldtype": "Section Break",
+   "label": "AWS S3 Configuration"
+  },
+  {
+   "fieldname": "aws_access_key_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "AWS Access Key ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "aws_secret_access_key",
+   "fieldtype": "Password",
+   "in_list_view": 1,
+   "label": "AWS Secret Access Key",
+   "reqd": 1
+  },
+  {
+   "fieldname": "aws_region",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "AWS Region",
+   "reqd": 1
+  },
+  {
+   "fieldname": "aws_bucket",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "AWS Bucket",
+   "reqd": 1
+  },
+  {
+   "fieldname": "connection_section",
+   "fieldtype": "Section Break",
+   "label": "Connection"
+  },
+  {
+   "default": "Not Tested",
+   "fieldname": "connection_status",
+   "fieldtype": "Select",
+   "label": "Connection Status",
+   "options": "Not Tested\nConnected\nError",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-03-12 04:14:51.915509",
+ "modified_by": "Administrator",
+ "module": "Power Tool SaaS",
+ "name": "PT SaaS Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
